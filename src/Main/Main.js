@@ -12,7 +12,7 @@ function Main() {
 
     const string = "HOLA MUNDO";
     const { speak } = useSpeechSynthesis();
-    const [value, setValue] = useState("");
+    const [values, setValues] = useState("");
 
     // function presionar_tecla() {
     //     tecla_esc = eve
@@ -20,7 +20,7 @@ function Main() {
 
     function onPress() {
 
-        speak({ text: value });
+        speak({ text: values });
     };
 
     return (
@@ -47,7 +47,7 @@ function Main() {
                         <textarea rows={5} value={string} ></textarea>
                     </div>
                     <div className='group'>
-                        <textarea rows={5} value={value} onChange={(e) => setValue(e.target.value)}></textarea>
+                        <textarea rows={5} value={values} onChange={(e) => setValues(e.target.value)}></textarea>
                     </div>
                     <div className='group'>
                         <button onClick={onPress}>
