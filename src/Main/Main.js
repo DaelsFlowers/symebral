@@ -6,7 +6,7 @@ import navbar from "../Image/navbars.png"
 import "./Main.css";
 
 import { useSpeechSynthesis } from 'react-speech-kit';
-import { keyboard } from '@testing-library/user-event/dist/keyboard';
+//import { keyboard } from '@testing-library/user-event/dist/keyboard';
 
 function Main() {
 
@@ -14,9 +14,9 @@ function Main() {
     const { speak } = useSpeechSynthesis();
     const [value, setValue] = useState("");
 
-    function presionar_tecla() {
-        tecla_esc = eve
-    }
+    // function presionar_tecla() {
+    //     tecla_esc = eve
+    // }
 
     function onPress() {
 
